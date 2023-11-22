@@ -1,5 +1,6 @@
 import React, {useState, useContext} from 'react'
 import UserContext from '../../context/UserContext'
+import "./Login.css"
 
 const Login = () => {
 
@@ -14,7 +15,7 @@ const Login = () => {
     }
 
   return (
-    <div>
+    <div id='login-box'>
         <h2>Login</h2>
         <input 
         type="text"
@@ -22,6 +23,7 @@ const Login = () => {
         value={userName}
         onChange={(e) => setUserName(e.target.value)}
         />
+        {" "}
         <input 
         type="password"
         placeholder='Password'
