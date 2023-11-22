@@ -1,8 +1,11 @@
 import './App.css'
+import UserContextProvider from './context/UserContextProvider'
 
 const App = () => {
   return (
-    <div>App</div>
+    <UserContextProvider>
+      <h1>Developer Salman</h1>
+    </UserContextProvider>
   )
 }
 
